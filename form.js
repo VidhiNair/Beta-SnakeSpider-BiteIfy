@@ -2,8 +2,15 @@ class Form {
 
     constructor() {
       this.input = createInput("Name");
-      this.input1 = createInput("Emergancy Number (eg. 999,911,112");
-      this.input2 = createInput("Emergancy Contact (eg. Dad - +44 07683 673389");
+      this.input1 = createInput("Age");
+      this.input2 = createInput("Weight");
+      this.input3 = createInput("Emergancy Number (eg. 999,911,112");
+      this.input4 = createInput("Phone Number (eg. +44 07683 673389");
+      this.input5 = createInput("Next of Kin");
+      this.input6 = createInput("Next of Kin's Phone No");
+      this.input7 = createInput("Medical Conditions");
+      this.input8 = createInput("Allergies");
+      this.input9 = createInput("Medication");
       this.button = createButton('Login');
       this.greeting = createElement('h2');
     }
@@ -25,6 +32,15 @@ class Form {
         this.input.hide();
         this.button.hide();
         user.name = this.input.value();
+        user.age = this.input1.value();
+        user.weight = this.input2.value();
+        user.EmergancyNumber = this.input3.value();
+        user.PhoneNumber = this.input4.value();
+        user.NextofKin = this.input5.value();
+        user.NextofKinNumber = this.input6.value();
+        user.MedicalCondition = this.input7.value();
+        user.Allergies = this.input8.value();
+        user.Medication = this.input9.value();
         userCount+=1;
         user.index = playerCount;
         user.update();
